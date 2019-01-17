@@ -1,16 +1,19 @@
 @media (max-width: 500px) {
-  .content-pick {
+  section,
+  div {
     display: flex;
-    align-content: center;
-  }
-  .destination {
     flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
   .content-pick {
     border: 1px dashed yellow;
   }
   .destination {
     border: 1px dashed red;
+  }
+  nav {
+    flex-direction: column;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -202,28 +205,25 @@ img {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: space-around;
-  border: solid red;
-  width: 100%;
-}
-nav h1 {
-  justify-content: flex-start;
+  border-bottom: dashed lightgray;
+  width: 125%;
 }
 nav a {
-  margin-right: 0px;
   font-size: 125%;
   flex-direction: row;
-  justify-content: space-around;
-  justify-content: flex-end;
   text-decoration: none;
   color: black;
   border: solid green;
 }
+nav h1 {
+  border: 1px solid orange;
+  align-items: flex-start;
+}
 section {
   border: 1px solid purple;
 }
-.destone {
+.dest-one {
   margin-left: 15px;
 }
 .footer {

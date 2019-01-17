@@ -14,18 +14,21 @@
 @sandy-beach: #FFEBCD;
 
 @media(max-width: 500px) {
+    section, div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
     .content-pick {
-        display: flex; 
-        align-content: center;      
+        border: 1px dashed yellow;
     }
     .destination {
+        border: 1px dashed red;
+ 
+    }
+    nav {
         flex-direction: column;
     }
+}
 
-.content-pick {
-    border: 1px dashed yellow;
-}
-.destination {
-    border: 1px dashed red;
-}
-}
